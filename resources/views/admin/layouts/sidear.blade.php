@@ -34,6 +34,17 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
                      with font-awesome or any other icon font library -->
+
+                @if(\Illuminate\Support\Facades\Auth::user()->hasRole('owner'))
+                <li class="nav-header">Role AND Permission</li>
+                <li class="nav-item">
+                    <a href="{{route('laratrust.roles-assignment.index')}}" class="nav-link">
+                        <i class="nav-icon far fa-newspaper"></i>
+                        <p>Role AND Permission</p>
+                    </a>
+                </li>
+                @endif
+
                 <li class="nav-header">Article</li>
                 <li class="nav-item">
                     <a href="{{route('admin.article')}}" class="nav-link">

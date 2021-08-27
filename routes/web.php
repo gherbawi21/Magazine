@@ -19,6 +19,8 @@ use Illuminate\Auth\Middleware\Authenticate;
 
 Auth::routes();
 
+
+
 Route::get('/', [App\Http\Controllers\MainController::class,'index'])->name('index');
 Route::get('/about', [App\Http\Controllers\MainController::class,'about'])->name('about');
 Route::get('/contact', [App\Http\Controllers\MainController::class,'contact'])->name('contact');
@@ -28,7 +30,7 @@ Route::post('/mail', [App\Http\Controllers\MailController::class,'store'])->name
 Route::post('/contact', [App\Http\Controllers\ContactController::class,'store'])->name('storecontact');
 Route::get('/article/{article}/show',[ArticlesController::class,'show'])->name('showArticle');
 
-Route::group(['prefix' => 'admin','middleware' => 'auth'] , function() {
+Route::group(['prefix' => 'admin','middleware' => ['role:owner|admin']] , function() {
 
     Route::group(['prefix' => 'article'], function() {
         Route::get('/',[ArticlesController::class,'index'])->name('admin.article');
@@ -53,6 +55,43 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'] , function() {
     Route::get('/contact' , [ContactController::class , 'index'] )->name('display.contact');
     Route::get('/mail' , [MailController::class , 'index'] )->name('display.mail');
 });
+
+// make new role
+Route::get('/newrole', function(){
+
+     //$owner = new \App\Models\Role();
+     //$owner->name         = 'owner';
+     //$owner->display_name = 'Project Owner'; // optional
+     //$owner->description  = 'User is the owner of a given project'; // optional
+     //$owner->save();
+
+    //$admin = new \App\Models\Role();
+    //$admin->name         = 'admin';
+    //$admin->display_name = 'User Administrator'; // optional
+    //$admin->description  = 'User is allowed to manage and edit other users'; // optional
+    //$admin->save();
+
+    //$user = new \App\Models\Role();
+    //$user->name         = 'user';
+    //$user->display_name = 'Normal User'; // optional
+    //$user->description  = 'User is allowed to comment'; // optional
+   // $user->save();
+
+    return route('index');
+})->name('newrole');
+
+// make new permission
+Route::get('/newpermission', function(){
+
+    $RoleAndPermissionPanel = new \App\Models\Permission();
+    $RoleAndPermissionPanel->name         = 'role_and_permission_panel';
+    $RoleAndPermissionPanel->display_name = 'RoleAndPermissionPanel'; // optional
+    // Allow a user to...
+    $RoleAndPermissionPanel->description  = 'role and permission panel'; // optional
+    $RoleAndPermissionPanel->save();
+
+    return back();
+})->name('newpermission');
 
 
 

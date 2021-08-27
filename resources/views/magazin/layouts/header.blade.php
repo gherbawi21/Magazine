@@ -109,6 +109,14 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{route('contact')}}">Contact</a>
                                     </li>
+                                    @if(Auth::check())
+                                        <li class="ml-3">
+                                            <form method="post" action="{{route('logout')}}">
+                                                @csrf
+                                                <button type="submit" class="btn btn-outline-danger">Logout</button>
+                                            </form>
+                                        </li>
+                                    @endif
                                 </ul>
                         </div>
 
