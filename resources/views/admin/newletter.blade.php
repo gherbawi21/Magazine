@@ -16,7 +16,7 @@
           <!-- Default box -->
           <div class="card">
               <div class="card-header">
-                  <h3 class="card-title">Category</h3>
+                  <h3 class="card-title">NewLetter Emails</h3>
                   <div class="card-tools">
                       <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
                           <i class="fas fa-minus"></i>
@@ -35,7 +35,7 @@
                               #
                           </th>
                           <th style="width: 20%">
-                              Category Name
+                              Emails
                           </th>
                           <th style="width: 20%">
                           </th>

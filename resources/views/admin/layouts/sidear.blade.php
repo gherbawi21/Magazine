@@ -1,4 +1,7 @@
+<?
+
 @section('sidebar')
+
 <!-- MainController Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
@@ -35,7 +38,7 @@
                 <!-- Add icons to the links using the .nav-icon class
                      with font-awesome or any other icon font library -->
 
-                @if(\Illuminate\Support\Facades\Auth::user()->hasRole('owner'))
+                @if(\Illuminate\Support\Facades\Auth::user()->isAbleTo('role_and_permission_panel'))
                 <li class="nav-header">Role AND Permission</li>
                 <li class="nav-item">
                     <a href="{{route('laratrust.roles-assignment.index')}}" class="nav-link">

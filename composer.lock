@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e3288d2b532b7e3ee4fb428a680735a3",
+    "content-hash": "02cc6f414861694b9a71e2f539494c53",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1336,6 +1336,62 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2021-08-05T14:04:08+00:00"
+        },
+        {
+            "name": "laravel/helpers",
+            "version": "v1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/helpers.git",
+                "reference": "febb10d8daaf86123825de2cb87f789a3371f0ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/helpers/zipball/febb10d8daaf86123825de2cb87f789a3371f0ac",
+                "reference": "febb10d8daaf86123825de2cb87f789a3371f0ac",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.8.0|^6.0|^7.0|^8.0",
+                "php": "^7.1.3|^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.0|^8.0|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                },
+                {
+                    "name": "Dries Vints",
+                    "email": "dries.vints@gmail.com"
+                }
+            ],
+            "description": "Provides backwards compatibility for helpers in the latest Laravel release.",
+            "keywords": [
+                "helpers",
+                "laravel"
+            ],
+            "support": {
+                "source": "https://github.com/laravel/helpers/tree/v1.4.1"
+            },
+            "time": "2021-02-16T15:27:11+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -3779,6 +3835,63 @@
                 }
             ],
             "time": "2021-08-08T09:03:08+00:00"
+        },
+        {
+            "name": "shrft/laravel-admin-bar",
+            "version": "v0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/shrft/laravel-admin-bar.git",
+                "reference": "f2d67211fdd9bd8c54e0da205c322e89e0a38b46"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/shrft/laravel-admin-bar/zipball/f2d67211fdd9bd8c54e0da205c322e89e0a38b46",
+                "reference": "f2d67211fdd9bd8c54e0da205c322e89e0a38b46",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": ">= 5.5.0",
+                "php": ">= 7.0.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.2",
+                "phpunit/phpunit": "^7.4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Shrft\\AdminBar\\AdminBarServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Shrft\\AdminBar\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "kodai shirafuta",
+                    "email": "shirafuta.kodai@gmail.com"
+                }
+            ],
+            "description": "Add admin toolbar to your front side of your website.",
+            "keywords": [
+                "admin",
+                "framework",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/shrft/laravel-admin-bar/issues",
+                "source": "https://github.com/shrft/laravel-admin-bar/tree/master"
+            },
+            "time": "2019-02-01T10:01:02+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

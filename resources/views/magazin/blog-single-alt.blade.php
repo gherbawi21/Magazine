@@ -8,7 +8,6 @@
     <section class="single-cover data-bg-image" data-bg-image="{{asset('uploads/'.$article->featured_photos)}}">
 
         <div class="container-xl">
-
             <div class="cover-content post">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -32,22 +31,24 @@
 
     </section>
 @endforeach
-	<!-- section main content -->
-	<section class="main-content">
-		<div class="container-xl">
-			<div class="row gy-4">
-				<div class="col-lg-12">
-					<!-- post single -->
-                    <div class="post post-single">
-						<!-- post content -->
-						<div class="post-content clearfix">
-                            <p>
-                                {!! $article->description !!}
-                            </p>
-						</div>
 
-
+<!-- section main content -->
+<section class="main-content">
+    <div class="container-xl">
+        <div class="row gy-4">
+            <div class="col-lg-12">
+                <!-- post single -->
+                <div class="post post-single">
+                    <!-- post content -->
+                    <div class="post-content clearfix">
+                        <p>
+                            {!! $article->description !!}
+                        </p>
                     </div>
-
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 @yield('footer')

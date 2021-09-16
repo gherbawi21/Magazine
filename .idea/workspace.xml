@@ -23,13 +23,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/Magazine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Magazine.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/cache/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/laratrust.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/laratrust.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/sidear.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/sidear.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/newletter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/newletter.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/magazin/blog-single-alt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/magazin/blog-single-alt.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/magazin/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/magazin/layouts/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -177,6 +180,8 @@
       <path value="$PROJECT_DIR$/vendor/http-interop/http-factory-guzzle" />
       <path value="$PROJECT_DIR$/vendor/santigarcor/laratrust" />
       <path value="$PROJECT_DIR$/vendor/kkszymanowski/traitor" />
+      <path value="$PROJECT_DIR$/vendor/shrft/laravel-admin-bar" />
+      <path value="$PROJECT_DIR$/vendor/laravel/helpers" />
     </include_path>
   </component>
   <component name="ProjectId" id="1wRomuhU3Fu9Klbx6bBgAxQQjEj" />
@@ -249,6 +254,12 @@
       <workItem from="1629981644009" duration="5839000" />
       <workItem from="1630012705625" duration="4076000" />
       <workItem from="1630070416328" duration="9125000" />
+      <workItem from="1630084927976" duration="12397000" />
+      <workItem from="1630102806920" duration="6423000" />
+      <workItem from="1630153490637" duration="6851000" />
+      <workItem from="1630165637208" duration="4628000" />
+      <workItem from="1631178881215" duration="54000" />
+      <workItem from="1631179326445" duration="1149000" />
     </task>
     <servers />
   </component>
@@ -276,15 +287,16 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="306" y="36" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1629475830728" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1629546803247">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="491" y="193" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1630098065736">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="491" y="193" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1630098065736" />
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1629546803247" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1629543882862">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1631178929096">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="526" y="193" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1629487930271" />
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1629543882862" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1631178929096" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1628433825076">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -306,10 +318,10 @@
     </state>
     <state x="553" y="310" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1629479454407" />
     <state x="777" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1628521476033" />
-    <state x="328" y="18" key="SettingsEditor" timestamp="1629474000868">
+    <state x="328" y="18" key="SettingsEditor" timestamp="1630100929834">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="328" y="18" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1629474000868" />
+    <state x="328" y="18" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1630100929834" />
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1629385967038" />
     <state x="331" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1629925421566">
       <screen x="0" y="0" width="1366" height="728" />
@@ -319,16 +331,20 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1330" y="580" width="606" height="547" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1629310035283" />
-    <state x="557" y="139" width="806" height="763" key="find.popup" timestamp="1629641448978">
+    <state x="557" y="139" width="806" height="763" key="find.popup" timestamp="1631179817892">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="396" y="97" width="573" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1629477308701" />
-    <state x="557" y="139" width="806" height="763" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1629641448978" />
+    <state x="396" y="97" width="573" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1630108884349" />
+    <state x="557" y="139" width="806" height="763" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1631179817892" />
     <state x="438" y="168" key="run.anything.popup" timestamp="1630015491474">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="438" y="168" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1630015491474" />
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1628592606406" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1630154995976">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1630154995976" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

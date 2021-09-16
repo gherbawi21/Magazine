@@ -4,8 +4,8 @@
 <html lang="en-US">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Katen - Minimal Blog & Magazine HTML Theme</title>
-    <meta name="description" content="Katen - Minimal Blog & Magazine HTML Theme">
+    <title>Al Jazeera</title>
+    <meta name="description" content="Al Jazeera">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('website/images/aj-footer-logo.bac952ad.svg')}}">
 
@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="{{asset('website/css/style.css')}}" type="text/css" media="all">
 
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="{{asset('website/js/html5shiv.min.js')}}"></script>
+    <script src="{{asset('website/js/respond.min.js')}}"></script>
     <![endif]-->
 
 </head>
@@ -56,6 +56,7 @@
     </div>
 </div>
 
+
 <!-- site wrapper -->
 <div class="site-wrapper">
 
@@ -71,7 +72,7 @@
 
                     <div class="col-md-4 col-xs-12">
                         <!-- site logo -->
-                        <a class="navbar-brand" href="classic.html"><img src="{{asset('website/images/aj-footer-logo.bac952ad.svg')}}" alt="logo" /></a>
+                        <a class="navbar-brand" href="{{route('index')}}"><img src="{{asset('website/images/aj-footer-logo.bac952ad.svg')}}" alt="logo" /></a>
                     </div>
 
                     <div class="col-md-8 d-none d-md-block">

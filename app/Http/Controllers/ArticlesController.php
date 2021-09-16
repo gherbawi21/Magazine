@@ -19,17 +19,6 @@ class ArticlesController extends Controller
      */
     public function index(Request $request)
     {
-//        $article  = NEW Article();
-//        if($request->filled('category_id')){
-//            $article = $article->where('category_id',$request->category_id);
-//        }
-//        $article = $article->paginate(2);
-//        $category = Category::get();
-//        $data = [
-//            'data' => $article,
-//            'category'=>$category
-//        ];
-
         $articles = Article::when($request->filled('category_id'),function ($q) use ($request){
             return $q->where('category_id',$request->category_id);
         })->paginate(10);

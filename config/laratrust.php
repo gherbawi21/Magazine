@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\MainController;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
+
 return [
     /*
     |--------------------------------------------------------------------------
@@ -279,7 +283,7 @@ return [
         | will be accessible from.
         |
         */
-        'path' => 'laratrust',
+        'path' => '/laratrust',
 
         /*
         |--------------------------------------------------------------------------
@@ -289,7 +293,7 @@ return [
         | The route where the go back link should point
         |
         */
-        'go_back_route' => '/',
+        'go_back_route' => '/admin/article',
 
         /*
         |--------------------------------------------------------------------------
@@ -299,7 +303,7 @@ return [
         | These middleware will get attached onto each Laratrust panel route.
         |
         */
-        'middleware' => ['web'],
+        'middleware' => ['web', 'role:owner'],
 
         /*
         |--------------------------------------------------------------------------
